@@ -15,9 +15,17 @@ public class Chessboard {
 		}
 	}
 	
-	public static int getBoardSize(){
-		new Chessboard();
-		return Chessboard.BOARD_SIZE;
+	public void printBoard(){
+		for(int i = 0; i < BOARD_SIZE; i++){
+			for(int j = 0; j < BOARD_SIZE; j++){
+				System.out.print(this.board[i][j]);
+			}
+			System.out.print("\n");
+		}
+	}
+	
+	public void setBoard(int posX, int posY, String chessman){
+		this.board[posX][posY] = chessman;
 		
 	}
 	
