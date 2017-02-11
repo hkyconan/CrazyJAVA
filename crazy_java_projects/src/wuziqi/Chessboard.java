@@ -29,4 +29,8 @@ public class Chessboard {
 		
 	}
 	
+	public String[][] getBoard(){
+		return this.board;
+		
+	}
 }
